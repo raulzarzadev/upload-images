@@ -24,7 +24,6 @@ const storage = multer.diskStorage({
     }
     //extname: file.mimetype
 });
-
 app.use(multer({
     storage: storage,
     dest: path.join(__dirname, 'public/uploads'),
